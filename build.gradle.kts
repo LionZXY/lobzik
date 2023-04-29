@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.7.21"
+    id("com.gradle.plugin-publish") version "1.1.0"
     `java-gradle-plugin`
 }
 
@@ -21,7 +22,6 @@ gradlePlugin {
         implementationClass = "xyz.mishkun.lobzik.LobzikPlugin"
     }
 }
-
 
 val VERSION_ASM = "9.4"
 dependencies {
